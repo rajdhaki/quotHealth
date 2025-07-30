@@ -153,13 +153,13 @@ const Navbar = ()=>{
     //     return () => document.removeEventListener('mousedown', handleClickOutside);
     // }, [openDropdown]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "sticky top-0 z-40 bg-transparent",
+        className: "z-40 bg-transparent",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "bg-gradient-to-r from-heroBlue/15  to-blueGreen/5 px-4 pt-4 lg:pt-8 lg:px-14",
+            className: "px-4 pt-4 lg:pt-8 lg:px-14",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 className: "container mx-auto relative z-10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative backdrop-blur-md bg-foreground  border-1 border-greenLite rounded-xl lg:rounded-full ps-4 pe-2  lg:ps-20 py-1.5 ",
+                    className: "relative backdrop-blur-md bg-background  border-1 border-greenLite rounded-xl lg:rounded-full ps-4 pe-2  lg:ps-20 py-1.5 ",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center justify-between w-full",
@@ -254,7 +254,7 @@ const Navbar = ()=>{
                                                 background: "var(--primary-gradient)"
                                             },
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                className: "rounded-full px-4 py-6 text-md font-semibold border-0 bg-foreground text-green",
+                                                className: "rounded-full px-4 py-6 text-md font-semibold border-0 bg-background text-green",
                                                 children: "Partner with us"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar.tsx",
@@ -329,7 +329,7 @@ const Navbar = ()=>{
                                                 background: "var(--primary-gradient)"
                                             },
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                className: "rounded-lg px-10 py-2 text-md font-semibold border-0 bg-foreground w-full text-green",
+                                                className: "rounded-lg px-10 py-2 text-md font-semibold border-0 bg-background w-full text-green",
                                                 children: "Partner with us"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Navbar.tsx",

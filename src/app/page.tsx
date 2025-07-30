@@ -1,5 +1,7 @@
+import GetStarted from "@/pages/home/GetStarted";
 import HealthcareGuardian from "@/pages/home/HealthcareGuardian";
 import Hero from "@/pages/home/Hero";
+import OurService from "@/pages/home/OurService";
 import WhatWeDoForYou from "@/pages/home/WhatWeDoForYou";
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       <HealthcareGuardian/>
       <WhatWeDoForYou/>
+      <OurService/>
+      <GetStarted/>
     </main>
   );
 }

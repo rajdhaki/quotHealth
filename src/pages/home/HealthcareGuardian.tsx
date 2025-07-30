@@ -1,15 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import men from '../../../public/Images/smelingMen.png'
+import men from '../../../public/Images/smelingMen.svg'
 
 const HealthcareGuardian = () => {
   return (
-    <section className='relative w-full  overflow-hidden '>
+    <section className='relative w-full overflow-hidden mt-24'>
       
       <div className='relative'>
         <div className='grid lg:grid-cols-2 gap-6 items-center'>
           
-          {/* Left side - Image collage with overlapping circles */}
+
           <div className='relative flex justify-center lg:justify-start'>
             {/* <div className='relative'> */}
 
@@ -25,14 +25,14 @@ const HealthcareGuardian = () => {
             {/* </div> */}
           </div>
           
-          {/* Right side - Text content */}
+
           <div className='space-y-8 px-6'>
-            <div className='space-y-6'>
-              <h3 className='text-green uppercase text-sm lg:text-lg font-bold tracking-wider'>
+            <div className='space-y-6 text-center lg:text-left'>
+              <h3 className='text-green uppercase text-sm lg:text-lg font-bold tracking-wider '>
                 Your Healthcare Guardian Angel
               </h3>
               
-              <h1 className='text-gray900 text-3xl lg:text-5xl 2xl:text-6xl font-bold leading-tight'>
+              <h1 className='text-gray900 text-2xl lg:text-5xl 2xl:text-6xl 2xl:px-2 font-bold leading-tight'>
                 Never Overpay for Healthcare Again
               </h1>
               

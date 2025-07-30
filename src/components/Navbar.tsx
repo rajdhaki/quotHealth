@@ -27,12 +27,12 @@ const Navbar = () => {
     // }, [openDropdown]);
 
     return (
-        <header className="sticky top-0 z-40 bg-transparent">
+        <header className="z-40 bg-transparent">
 
-            <div className='bg-gradient-to-r from-heroBlue/15  to-blueGreen/5 px-4 pt-4 lg:pt-8 lg:px-14'>
+            <div className='px-4 pt-4 lg:pt-8 lg:px-14'>
 
             <nav className="container mx-auto relative z-10">
-                <div className="relative backdrop-blur-md bg-foreground  border-1 border-greenLite rounded-xl lg:rounded-full ps-4 pe-2  lg:ps-20 py-1.5 ">
+                <div className="relative backdrop-blur-md bg-background  border-1 border-greenLite rounded-xl lg:rounded-full ps-4 pe-2  lg:ps-20 py-1.5 ">
                     <div className="flex items-center justify-between w-full">
                         <Link href="/" className="flex items-center space-x-2">
                             <Image width={100} height={100} src={logo.src} className='w-8 h-8 lg:w-14 lg:h-14' alt="Logo" />
@@ -65,7 +65,7 @@ const Navbar = () => {
                         <div className='hidden lg:flex place-items-center gap-2 px-4 py-1'>
                             <div className="hidden lg:flex items-center rounded-full px-0.5 py-0.5" style={{ background: "var(--primary-gradient)" }}>
                                 <Button
-                                    className="rounded-full px-4 py-6 text-md font-semibold border-0 bg-foreground text-green"
+                                    className="rounded-full px-4 py-6 text-md font-semibold border-0 bg-background text-green"
                                 >
                                     Partner with us
                                 </Button>
@@ -90,7 +90,7 @@ const Navbar = () => {
                             <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link>
                             <div >
                                 <div className=" flex items-center rounded-lg px-0.5 py-0.5" style={{ background: "var(--primary-gradient)" }}>
-                                    <Button className="rounded-lg px-10 py-2 text-md font-semibold border-0 bg-foreground w-full text-green">
+                                    <Button className="rounded-lg px-10 py-2 text-md font-semibold border-0 bg-background w-full text-green">
                                         Partner with us
                                     </Button>
                                 </div>

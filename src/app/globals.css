@@ -35,15 +35,15 @@
   --color-shadow: var(--shadow);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background-color: var(--foreground);
-  color: var(--background);
+ background-image: linear-gradient( rgba(7, 196, 184, 0.1), rgba(7, 196, 184, 0));
+  color: black;
   font-family: var(--font-inter), sans-serif;
 }
