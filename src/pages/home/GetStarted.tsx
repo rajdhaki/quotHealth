@@ -6,9 +6,9 @@ import gif from '../../../public/Images/getStated.gif'
 
 const GetStarted = () => {
     return (
-        <section className=' w-full mt-24  lg:px-8 px-4 '>
+        <section  className=' w-full mt-24  '>
 
-            <div className='container mx-auto rounded-3xl relative overflow-hidden'>
+            <div className='container mx-auto rounded-3xl relative overflow-hidden lg:px-5 px-3 py-4 '>
                 <div className='absolute inset-0  '>
                     <Image
                         src={gif.src}

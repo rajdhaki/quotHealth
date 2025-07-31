@@ -47,3 +47,22 @@ body {
   color: black;
   font-family: var(--font-inter), sans-serif;
 }
+
+@font-face {
+  font-family: 'made-tommy';
+  src: url('../../public/fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'made-tommy-regular';
+  src: url('../../public/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'made-tommy-medium';
+  src: url('../../public/fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
