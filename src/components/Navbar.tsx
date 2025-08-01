@@ -1,6 +1,6 @@
 "use client"
 import { Menu } from 'lucide-react';
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Button } from './ui/button';
 import logo from "../../public/Images/logo.png"
 import Link from 'next/link';
@@ -10,21 +10,8 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
-    // Refs for dropdowns
-    const designRef = useRef<HTMLDivElement>(null);
-    const resourcesRef = useRef<HTMLDivElement>(null);
 
-    // React.useEffect(() => {
-    //     function handleClickOutside(event: MouseEvent) {
-    //         if (!openDropdown) return;
-    //         const ref = openDropdown === 'design' ? designRef : resourcesRef;
-    //         if (ref.current && !ref.current.contains(event.target as Node)) {
-    //             setOpenDropdown(null);
-    //         }
-    //     }
-    //     document.addEventListener('mousedown', handleClickOutside);
-    //     return () => document.removeEventListener('mousedown', handleClickOutside);
-    // }, [openDropdown]);
+
 
     return (
         <header className="z-40 bg-transparent">

@@ -1,15 +1,41 @@
+"use client"
+
 import React from 'react'
 import iphone from '../../../public/Images/iphone.svg'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import sidebar from '../../../public/Images/Sidebar.svg'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+
+import slider1 from '../../../public/Images/Slice1.svg'
+import slider2 from '../../../public/Images/Slice2.svg'
+import slider3 from '../../../public/Images/Slice3.svg'
+
+const sliderImage: Array<StaticImageData> = [slider1, slider2, slider3]
 
 const Macbook = () => {
+
+    const scrollRef = React.useRef<HTMLDivElement>(null)
+
+    useGSAP(() => {
+
+        if (scrollRef.current) {
+            gsap.to(scrollRef.current, {
+                scrollTop: scrollRef.current.scrollHeight,
+                duration: 5,
+                ease: "none",
+                repeat: -1,
+                yoyo: true,
+            });
+        }
+    })
+
     return (
-        <section className='w-full h-screen  bg-gradient-to-b from-[#36CFA600] via-[#07C4B880]/80 to-[#36CFA600] bg-[length:10%_100%] mt-24'>
+        <section className='w-full h-screen bg-gradient-to-b from-[#36CFA600] via-[#07C4B880]/80 to-[#36CFA600] bg-[length:10%_100%] mt-24'>
 
-            <div className='flex justify-center items-center flex-col w-full h-full relative '>
+            <div className='flex justify-center items-center flex-col w-full h-full relative'>
 
-                <div className='border-[14px] border-foreground h-[70vh] w-[60%] rounded-t-3xl rounded-b-xl relative overflow-hidden'>
+                <div className='border-[14px] border-foreground 2xl:h-[70vh] lg:h-[75vh] w-[90%] md:w-[80%] lg:w-[75%] 2xl:w-[60%] rounded-t-3xl rounded-b-xl relative overflow-hidden lg:block hidden'>
                     <div className='bg-foreground h-6 w-32 mx-auto rounded-b-xl flex justify-center relative z-20'>
                         <svg width="10" height="10" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="3.99965" cy="4.09072" r="3.77901" fill="#0F0F0F" stroke="#151515" strokeWidth="0.260621" />
@@ -17,29 +43,39 @@ const Macbook = () => {
                             <circle cx="3.60846" cy="3.69977" r="0.912175" fill="#0A0B0D" />
                             <circle opacity="0.6" cx="3.9994" cy="4.0907" r="1.30311" fill="#1F2531" />
                         </svg>
-
                     </div>
 
-                    <div className='w-full h-full relative -top-6 '>
-                        <div className='w-[30%] rounded-tl-2xl'>
-                        <Image src={sidebar.src} width={200} height={50} alt='sidebar'  className='rounded-tl-2xl'/>
+                    <div className='w-full h-full relative -top-6 flex'>
+                        <div className='w-[20%] rounded-tl-2xl'>
+                            <Image src={sidebar.src} width={200} height={50} alt='sidebar' className='rounded-tl-2xl' />
                         </div>
 
-                        <div className='w-[70%]'>
+                        <div className='w-[90%] flex justify-center items-center'>
+
+                            <div ref={scrollRef} className='flex flex-col w-full h-full overflow-y-auto'>
+                                {sliderImage.map((img, index) => (
+                                    <div key={index} className=" h-full">
+                                        <Image
+                                            src={img.src}
+                                            width={150}
+                                            height={150}
+                                            alt='slider'
+                                            className='w-full h-full object-contain '
+                                        />
+                                    </div>
+                                ))}
+
+                            </div>
 
                         </div>
-
                     </div>
-
-                    <div className='absolute -bottom-16 -right-28 flex justify-center items-center z-30'>
-
-                        <Image src={iphone.src} width={300} height={300} alt='iphone' />
-
-                    </div>
-
                 </div>
 
-                <div className='-mt-2.5 relative z-10'>
+                <div className='absolute 2xl:bottom-40 lg:bottom-28  lg:right-0 2xl:right-36  flex justify-center items-center z-30'>
+                    <Image src={iphone.src} width={200} height={200} className=' w-full h-full lg:w-[480px] lg:h-[480px] 2xl:w-[500px] 2xl:h-[500px]' alt='iphone' />
+                </div>
+
+                <div className='-mt-2.5 relative z-10 lg:block hidden'>
                     <svg width="1103" height="30" viewBox="0 0 992 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.846185 0H991.501V19C991.501 21.2091 989.71 23 987.501 23H4.8462C2.63706 23 0.846185 21.2091 0.846185 19V0Z" fill="url(#paint0_linear_592_9127)" />
                         <defs>
@@ -51,10 +87,9 @@ const Macbook = () => {
                             </linearGradient>
                         </defs>
                     </svg>
-
                 </div>
 
-                <div className='-mt-3 relative z-20'>
+                <div className='-mt-3 relative z-20 lg:block hidden'>
                     <svg width="1316" height="70" viewBox="0 0 1216 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_592_9093)">
                             <path d="M1216 4.6V0H0V4.6C0 18.0413 0 24.7619 2.61584 29.8958C4.91681 34.4117 8.58832 38.0832 13.1042 40.3842C18.2381 43 24.9587 43 38.4 43H1177.6C1191.04 43 1197.76 43 1202.9 40.3842C1207.41 38.0832 1211.08 34.4117 1213.38 29.8958C1216 24.7619 1216 18.0413 1216 4.6Z" fill="url(#paint0_linear_592_9093)" />
@@ -157,7 +192,7 @@ const Macbook = () => {
                     </svg>
                 </div>
 
-                <div className='-mt-8'>
+                <div className='-mt-8 hidden lg:block'>
                     <svg width="1263" height="64" viewBox="0 0 1163 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_f_592_9092)">
                             <ellipse cx="581.5" cy="22" rx="570.5" ry="11" fill="#141212" />
@@ -170,7 +205,6 @@ const Macbook = () => {
                             </filter>
                         </defs>
                     </svg>
-
                 </div>
 
             </div>

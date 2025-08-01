@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='grid lg:grid-cols-2 gap-16 items-center'>
 
 
-          <div className='space-y-10 w-full  flex flex-col 2xl:px-12 px-4 '>
+          <div className='space-y-10 w-full  flex flex-col 2xl:px-12 px-4 lg:items-start md:items-center items-start'>
             <h1 className='text-2xl lg:text-5xl font-bold text-gray900 leading-tight tracking-tight  '>
               {`Healthcare Bills Shouldn't Be a Mystery.`}
             </h1>

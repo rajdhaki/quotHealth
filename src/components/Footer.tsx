@@ -1,4 +1,6 @@
-import { Search, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import Image from "next/image";
+import logo from '../../public/Images/logo.png'
 
 const Footer = () => {
     return (
@@ -16,24 +18,101 @@ const Footer = () => {
                         className="text-background"
                     />
                 </svg>
-                {/* <svg width="1440" height="340" viewBox="0 0 1440 340" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 341.071V89.9665C139.389 -24.2652 139.389 -5.40138 656.07 16.607C1021.35 22.6262 1415.08 38.9865 1440 48.0451V341.071H0Z" fill="url(#paint0_linear_455_118)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_455_118" x1="720" y1="0" x2="720" y2="341.071" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#0C8E86" />
-                            <stop offset="1" stop-color="#032826" />
-                        </linearGradient>
-                    </defs>
-                </svg> */}
-
             </div>
 
-            <div className="container mx-auto px-6 py-16 pt-24">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="container mx-auto px-4 py-16 pt-24">
+                {/* Mobile Layout */}
+                <div className="block md:hidden">
+                    {/* Brand Section - Full Width */}
+                    <div className="flex items-center justify-center mb-8">
+                        <div className=" p-2 ">
+                            <Image src={logo.src} width={60} height={60} alt="logo" />
+                        </div>
+                        <h2 className="text-xl font-semibold">Quot Health</h2>
+                    </div>
+
+                    {/* 2 Column Layout for Links */}
+                    <div className="grid grid-cols-2 gap-14 mb-8">
+                        {/* Left Column */}
+                        <div className="space-y-6">
+                            {/* Website Links */}
+                            <div className="text-center">
+                                <h3 className="text-lg font-semibold mb-4">Website Links</h3>
+                                <nav className="space-y-3">
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200 underline decoration-1 underline-offset-4"
+                                    >
+                                        Who we are?
+                                    </a>
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200 underline decoration-1 underline-offset-4"
+                                    >
+                                        How it works?
+                                    </a>
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200 underline decoration-1 underline-offset-4"
+                                    >
+                                        Get started
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+
+                        {/* Right Column */}
+                        <div className="space-y-6">
+                            {/* Support */}
+                            <div>
+                                <h3 className="text-lg font-semibold mb-4 text-center">Support</h3>
+                                <nav className="space-y-3 text-center">
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200"
+                                    >
+                                        Contact
+                                    </a>
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200"
+                                    >
+                                        Terms & Conditions
+                                    </a>
+                                    <a
+                                        href="#"
+                                        className="block text-footer-text-muted hover:text-footer-text transition-colors duration-200"
+                                    >
+                                        Privacy Policy
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Contact Section - Centered */}
+                    <div className="flex justify-center mb-8">
+                        <div>
+                            <h3 className="text-lg font-semibold mb-4 text-center">Contact</h3>
+                            <div className="flex items-center justify-center space-x-3 text-footer-text-muted">
+                                <Mail className="h-5 w-5 flex-shrink-0" />
+                                <a
+                                    href="mailto:info@quothealth.com"
+                                    className="hover:text-footer-text transition-colors duration-200"
+                                >
+                                    info@quothealth.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Desktop Layout */}
+                <div className="hidden md:grid md:grid-cols-4 gap-8">
                     {/* Brand Section */}
-                    <div className="flex items-center space-x-3">
-                        <div className="bg-white/20 p-3 rounded-full">
-                            <Search className="h-6 w-6 text-white" />
+                    <div className="flex items-center space-x-1">
+                        <div className=" p-2 ">
+                            <Image src={logo.src} width={60} height={60} alt="logo" />
                         </div>
                         <h2 className="text-xl font-semibold">Quot Health</h2>
                     </div>
@@ -104,7 +183,7 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright */}
-                <div className="border-t border-white/20 mt-12 pt-8">
+                <div className="border-t border-background/20 mt-12 pt-8">
                     <p className="text-center text-footer-text-muted text-sm">
                         Copyright © 2025 Quot Health, Inc. All rights reserved.
                     </p>

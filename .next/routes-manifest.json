@@ -1,1 +1,101 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/home/AppDownload",
+      "regex": "^/home/AppDownload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/AppDownload(?:/)?$"
+    },
+    {
+      "page": "/home/GetStarted",
+      "regex": "^/home/GetStarted(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/GetStarted(?:/)?$"
+    },
+    {
+      "page": "/home/HealthcareGuardian",
+      "regex": "^/home/HealthcareGuardian(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/HealthcareGuardian(?:/)?$"
+    },
+    {
+      "page": "/home/Hero",
+      "regex": "^/home/Hero(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/Hero(?:/)?$"
+    },
+    {
+      "page": "/home/Macbook",
+      "regex": "^/home/Macbook(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/Macbook(?:/)?$"
+    },
+    {
+      "page": "/home/OurService",
+      "regex": "^/home/OurService(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/OurService(?:/)?$"
+    },
+    {
+      "page": "/home/WhatWeDoForYou",
+      "regex": "^/home/WhatWeDoForYou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home/WhatWeDoForYou(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

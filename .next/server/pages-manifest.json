@@ -1,1 +1,13 @@
-{}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/home/AppDownload": "pages/home/AppDownload.html",
+  "/home/GetStarted": "pages/home/GetStarted.html",
+  "/home/Hero": "pages/home/Hero.html",
+  "/home/HealthcareGuardian": "pages/home/HealthcareGuardian.html",
+  "/home/Macbook": "pages/home/Macbook.html",
+  "/home/OurService": "pages/home/OurService.html",
+  "/home/WhatWeDoForYou": "pages/home/WhatWeDoForYou.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

@@ -32,12 +32,12 @@ const HealthcareGuardian = () => {
                 Your Healthcare Guardian Angel
               </h3>
               
-              <h1 className='text-gray900 text-2xl lg:text-5xl 2xl:text-6xl 2xl:px-2 font-bold leading-tight'>
+              <h1 className='text-gray900 text-2xl lg:text-5xl 2xl:text-6xl  font-bold leading-tight'>
                 Never Overpay for Healthcare Again
               </h1>
               
-              <p className='text-gray600 text-base lg:text-lg leading-relaxed max-w-lg'>
-                Quot Health helps you save money, get clarity, and feel protected in a confusing healthcare system. We're your personal ally for medical bills and insurance – making sure you only pay what's fair. Healthcare is complicated, but we make it simple and on your side.
+              <p className='text-gray600 text-base lg:text-lg mx-auto lg:mx-0 leading-relaxed max-w-lg'>
+{`                Quot Health helps you save money, get clarity, and feel protected in a confusing healthcare system. We're your personal ally for medical bills and insurance – making sure you only pay what's fair. Healthcare is complicated, but we make it simple and on your side.`}
               </p>
             </div>
           </div>
