@@ -31,7 +31,7 @@ const Macbook = () => {
     })
 
     return (
-        <section className='w-full h-screen bg-gradient-to-b from-[#36CFA600] via-[#07C4B880]/80 to-[#36CFA600] bg-[length:10%_100%] mt-24'>
+        <section className='w-full h-[60vh] lg:h-screen bg-gradient-to-b from-[#36CFA600] via-[#07C4B880]/80 to-[#36CFA600] bg-[length:10%_100%] lg:mt-24 mt-16'>
 
             <div className='flex justify-center items-center flex-col w-full h-full relative'>
 

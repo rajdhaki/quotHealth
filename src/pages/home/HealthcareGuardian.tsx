@@ -4,14 +4,13 @@ import men from '../../../public/Images/smelingMen.svg'
 
 const HealthcareGuardian = () => {
   return (
-    <section className='relative w-full overflow-hidden mt-24'>
+    <section className='relative w-full overflow-hidden lg:mt-24 mt-10'>
       
       <div className='relative'>
-        <div className='grid lg:grid-cols-2 gap-6 items-center'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-6 items-center'>
           
 
           <div className='relative flex justify-center lg:justify-start'>
-            {/* <div className='relative'> */}
 
 
                     <Image 
@@ -22,7 +21,7 @@ const HealthcareGuardian = () => {
                       className='w-full h-full lg:w-[90%] object-cover'
                     />
               
-            {/* </div> */}
+
           </div>
           
 
@@ -36,7 +35,7 @@ const HealthcareGuardian = () => {
                 Never Overpay for Healthcare Again
               </h1>
               
-              <p className='text-gray600 text-base lg:text-lg mx-auto lg:mx-0 leading-relaxed max-w-lg'>
+              <p className='text-gray600 text-base lg:text-lg leading-relaxed max-w-lg'>
 {`                Quot Health helps you save money, get clarity, and feel protected in a confusing healthcare system. We're your personal ally for medical bills and insurance – making sure you only pay what's fair. Healthcare is complicated, but we make it simple and on your side.`}
               </p>
             </div>

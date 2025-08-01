@@ -87,7 +87,7 @@ const WhatWeDoForYou = () => {
   }, { scope: sectionRef })
 
   return (
-    <section ref={sectionRef} className="pt-16 px-4 mt-24">
+    <section ref={sectionRef} className="pt-16 px-4 lg:mt-24 mt-10">
       <div className="lg:mx-auto container">
         {/* Header Section */}
         <div className="header-content text-center mb-16">
@@ -100,7 +100,7 @@ const WhatWeDoForYou = () => {
         </div>
 
         {/* Services Grid */}
-        <div ref={cardsRef} className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div ref={cardsRef} className="grid lg:grid-cols-2 md:grid-cols-2 gap-8 mb-16">
           {/* Spot & Fix Billing Errors */}
           <div className="service-card bg-background rounded-xl p-8 shadow-xl shadow-shadow border border-border transition-shadow hover:shadow-2xl hover:scale-105 duration-300">
             <div className="flex items-center flex-col lg:flex-row lg:gap-1.5 gap-3 space-x-4">
@@ -112,7 +112,7 @@ const WhatWeDoForYou = () => {
                   Spot & Fix Billing Errors
                 </h3>
                 <p className="text-gray600 leading-relaxed">
-                 {` We audit your medical bills and insurance EOBs to find hidden mistakes or overcharges, so you don't pay a penny more than you should.`}
+                  {`We audit your medical bills and insurance EOBs to find hidden mistakes or overcharges, so you don't pay a penny more than you should.`}
                 </p>
               </div>
             </div>
@@ -129,7 +129,7 @@ const WhatWeDoForYou = () => {
                   Price Check Healthcare
                 </h3>
                 <p className="text-gray600 leading-relaxed">
-                 {` No more mystery pricing. Use our transparent search tool to compare costs for procedures before you get care. Make informed choices and avoid expensive surprises.`}
+                  {`No more mystery pricing. Use our transparent search tool to compare costs for procedures before you get care. Make informed choices and avoid expensive surprises.`}
                 </p>
               </div>
             </div>
@@ -146,7 +146,7 @@ const WhatWeDoForYou = () => {
                   Recover Your Money
                 </h3>
                 <p className="text-gray600 leading-relaxed">
-                 {` If you've already overpaid, we go to bat for you – working to recover refunds or credits from providers and insurers, and put your money back in your pocket.`}
+                  {`If you've already overpaid, we go to bat for you – working to recover refunds or credits from providers and insurers, and put your money back in your pocket.`}
                 </p>
               </div>
             </div>
@@ -160,10 +160,10 @@ const WhatWeDoForYou = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-gray900 mb-3">
-                  {`Protect Your Wallet (Coming Soon)`}
+                  Protect Your Wallet (Coming Soon)
                 </h3>
                 <p className="text-gray600 leading-relaxed">
-                  {`Life is unpredictable, but your bills don't have to be. Our upcoming micro-coverage plans will act as a safety net for high deductibles or surprise medical expenses – giving you extra peace of mind.`}
+{`                Life is unpredictable, but your bills don't have to be. Our upcoming micro-coverage plans will act as a safety net for high deductibles or surprise medical expenses – giving you extra peace of mind.`}
                 </p>
               </div>
             </div>
@@ -172,7 +172,7 @@ const WhatWeDoForYou = () => {
 
         <div className="bottom-text text-center">
           <p className="text-gray600 leading-relaxed lg:px-10 px-4 mx-auto text-lg">
-{`            Quot Health helps you save money, get clarity, and feel protected in a confusing healthcare system. We're your personal ally for medical bills and insurance – making sure you only pay what's fair. Healthcare is complicated, but we make it simple and on your side.`}
+            {`Quot Health helps you save money, get clarity, and feel protected in a confusing healthcare system. We're your personal ally for medical bills and insurance – making sure you only pay what's fair. Healthcare is complicated, but we make it simple and on your side.`}
           </p>
         </div>
       </div>

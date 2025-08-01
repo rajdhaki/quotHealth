@@ -10,21 +10,21 @@ const Hero = () => {
     <section className='relative w-full  overflow-hidden  '>
 
       <div className='relative z-10 mx-auto container lg:px-0 px-4 pt-10'>
-        <div className='grid lg:grid-cols-2 gap-16 items-center'>
+        <div className='grid lg:grid-cols-2 gap-16 items-center '>
 
 
-          <div className='space-y-10 w-full  flex flex-col 2xl:px-12 px-4 lg:items-start md:items-center items-start'>
-            <h1 className='text-2xl lg:text-5xl font-bold text-gray900 leading-tight tracking-tight  '>
+          <div className='space-y-10 w-full  flex flex-col 2xl:px-12 px-4 lg:items-start md:items-center items-start '>
+            <h1 className='text-2xl lg:text-5xl font-bold text-gray900 leading-tight tracking-tight  text-center lg:text-left md:text-center '>
               {`Healthcare Bills Shouldn't Be a Mystery.`}
             </h1>
 
-            <p className='text-md lg:text-lg text-gray600 leading-relaxed max-w-xl font-normal '>
+            <p className='text-md lg:text-lg text-gray600 leading-relaxed max-w-xl font-normal text-center md:text-center lg:text-left '>
               {`Quot Health helps you check the true cost of your care before you go—and find the overcharges after you've already paid. We even offer temporary coverage when your insurance falls short.`}
             </p>
 
-            <div className='flex flex-col sm:flex-row gap-6'>
+            <div className='flex flex-col sm:flex-row gap-6 mx-auto lg:mx-0'>
               <Button
-                className='px-4 py-6 lg:text-lg text-md font-semibold rounded-xl text-foreground  shadow-lg'
+                className='px-4 py-6 lg:text-lg text-md font-semibold rounded-xl text-foreground  shadow-lg cursor-pointer'
                 style={{ background: "var(--primary-gradient)" }}
               >
                 Learn How it Works
@@ -32,7 +32,7 @@ const Hero = () => {
 
               <Button
                 variant='outline'
-                className='px-4 py-6 lg:text-lg text-md font-semibold rounded-xl border-2 border-green text-gray800 bg-background hover:bg-green hover:text-foreground shadow-lg'
+                className='px-4 py-6 lg:text-lg text-md font-semibold rounded-xl border-2 border-green text-gray800 bg-background hover:bg-green hover:text-foreground shadow-lg cursor-pointer'
               >
                 CareBridge (Coming Soon)
               </Button>
@@ -41,7 +41,7 @@ const Hero = () => {
 
           {/* Right side - Image collage */}
           <div className=''>
-            <div className='w-full flex justify-center'>
+            <div className='w-full md:w-9/10 lg:w-full lg:mx-0  md:mx-auto flex justify-center'>
               <Image src={hero.src} width={500} height={500} alt='hero image' className='object-contain w-[80%] h-[80%]' />
             </div>
           </div>

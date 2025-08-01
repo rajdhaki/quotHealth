@@ -11,7 +11,7 @@ const dmSans = DM_Sans({
 
 const AppDownload = () => {
   return (
-    <section className='relative w-full my-24 px-3 overflow-hidden'>
+    <section className='relative w-full my-10 lg:my-24  px-3 overflow-hidden'>
 
 
 
@@ -19,7 +19,7 @@ const AppDownload = () => {
         <div className='grid lg:grid-cols-2 gap-6 lg:gap-0 items-center bg-linear-to-tr from-[#07C4B8] to-[#36CFA6] px-3 lg:px-16 py-4  lg:py-10 rounded-4xl' >
 
           {/* Left side - Text and CTA */}
-          <div className='space-y-2 '>
+          <div className='space-y-2 text-center lg:text-start'>
             {/* Hashtag */}
             <div style={{ fontFamily: "made-tommy-medium" }} className='text-background/80 text-sm lg:text-base lg:mb-5 mb-3'>
               {`#YourHealthPartner`}
@@ -36,7 +36,7 @@ const AppDownload = () => {
             </p>
 
             {/* Download buttons */}
-            <div className={`flex flex-row gap-2 items-center mt-10 ${dmSans.variable}`}>
+            <div className={`flex flex-row gap-2 items-center md:justify-center lg:justify-start mt-10 ${dmSans.variable}`}>
               <button className='flex items-center gap-3 bg-black text-background px-2.5 lg:pl-3 lg:pr-10 py-1.5 rounded-xl hover:bg-gray-900 transition-colors border border-background'>
                 <span><svg width="33" height="37" viewBox="0 0 33 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M26.9749 34.6697C24.912 36.5398 22.6596 36.2445 20.4914 35.3587C18.1969 34.4531 16.0918 34.4138 13.671 35.3587C10.6398 36.5792 9.03992 36.2248 7.22958 34.6697C-3.04303 24.7679 -1.5274 9.68891 10.1345 9.13772C12.9764 9.27552 14.9551 10.5944 16.6181 10.7126C19.102 10.2401 21.4807 8.88181 24.1331 9.05898C27.3117 9.29521 29.7115 10.4763 31.2902 12.6024C24.7225 16.2835 26.2802 24.3742 32.3007 26.638C31.1008 29.5908 29.5431 32.524 26.9538 34.6894L26.9749 34.6697ZM16.4076 9.01961C16.0918 4.62977 19.9019 1.00766 24.2804 0.65332C24.8909 5.73215 19.3546 9.51175 16.4076 9.01961Z" fill="white" />
@@ -94,7 +94,7 @@ const AppDownload = () => {
                 alt="Download"
                 width={500}
                 height={500}
-                className='w-full h-full object-contain'
+                className='w-full h-full md:w-[70%] md:mx-auto lg:mx-0 lg:w-full object-contain'
               />
 
             </div>

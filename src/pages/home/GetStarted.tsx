@@ -6,9 +6,9 @@ import gif from '../../../public/Images/getStated.gif'
 
 const GetStarted = () => {
     return (
-        <section className=' w-full mt-24 '>
+        <section className=' w-full lg:mt-24 mt-10 '>
 
-            <div className='container mx-auto rounded-3xl relative overflow-hidden lg:px-5 px-2 py-4  '>
+            <div className='container mx-auto rounded-none md:rounded-3xl lg:rounded-3xl relative overflow-hidden lg:px-5 px-2 py-4  '>
                     <div className=' inset-0  '>
                         <Image
                             src={gif.src}
@@ -18,7 +18,7 @@ const GetStarted = () => {
                             priority
                         />
                         {/* Dark overlay */}
-                        <div className='absolute inset-0 bg-[#04373480] rounded-3xl px-4'></div>
+                        <div className='absolute inset-0 bg-[#04373480] rounded-none md:rounded-3xl lg:rounded-3xl px-4'></div>
                     </div>
 
                     {/* Content */}

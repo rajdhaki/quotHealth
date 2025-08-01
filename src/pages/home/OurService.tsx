@@ -87,7 +87,7 @@ const OurService = () => {
   ];
 
   return (
-    <section ref={sectionRef} className=" px-4 lg:px-8 mt-24">
+    <section ref={sectionRef} className=" px-4 lg:px-8 lg:mt-24 mt-10">
       <div className="container mx-auto ">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Title and Image */}
@@ -104,20 +104,20 @@ const OurService = () => {
             <div ref={imageRef} className="relative">
               
               {/* Main image container */}
-              <div className="relative rounded-3xl ml-3 lg:ml-0  lg:overflow-hidden">
+              <div className="relative rounded-3xl ml-3 lg:ml-0  lg:overflow-hidden md:flex justify-center items-center lg:block ">
 
-                <Image src={docter.src} width={300} height={400} alt='docter' className="w-full h-auto object-cover rounded-2xl"/>
+                <Image src={docter.src} width={300} height={400} alt='docter' className="w-full h-auto md:h-[50%] md:w-[50%] lg:w-full lg:h-auto object-cover rounded-2xl"/>
                 
               </div>
             </div>
           </div>
 
           {/* Right side - Services */}
-          <div ref={servicesRef} className="space-y-4">
+          <div ref={servicesRef} className="space-y-4 block md:grid md:grid-cols-2 lg:block">
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="service-card bg-accent/50 rounded-2xl p-4 hover:bg-accent/70 transition-colors duration-300 border border-border shadow-shadow shadow-lg"
+                className="service-card bg-accent/50 rounded-2xl p-4 hover:bg-accent/70 transition-colors duration-300 border border-border shadow-shadow shadow-lg  md:aspect-square lg:aspect-auto"
               >
                 <h3 className="text-xl 2xl:text-2xl lg:text-xl font-semibold text-foreground mb-1">
                   {service.title}
